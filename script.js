@@ -188,6 +188,12 @@ mainContainer.addEventListener('click', function (event) {
         const card = event.target.closest('.card');
 
         const companyName = card.querySelector('.companyName').innerText;
+        interviewList = interviewList.filter(item => item.companyName !== companyName);
+        rejectedList = rejectedList.filter(item => item.companyName !== companyName);
+
+        card.remove();
+
+        calculateCount();
 
         
     }
