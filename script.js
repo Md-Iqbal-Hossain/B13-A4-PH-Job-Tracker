@@ -183,6 +183,15 @@ mainContainer.addEventListener('click', function (event) {
         calculateCount();
     }
 
+    else if (event.target.closest('.btn-delete')) {
+
+        const card = event.target.closest('.card');
+
+        const companyName = card.querySelector('.companyName').innerText;
+
+        
+    }
+
 })
 
 
