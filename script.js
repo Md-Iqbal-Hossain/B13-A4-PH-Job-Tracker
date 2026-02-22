@@ -197,6 +197,8 @@ mainContainer.addEventListener('click', function (event) {
 
         if (currentStatus === 'interview-filter-btn') {
 
+            jobs.innerText = `${interviewList.length} of ${total.innerText}`;
+
             if (interviewList.length === 0) {
                 filterSection.innerHTML = '';
                 noJobs.classList.remove('hidden');
@@ -206,7 +208,9 @@ mainContainer.addEventListener('click', function (event) {
 
         }
 
-        if (currentStatus === 'rejected-filter-btn') {
+        else if (currentStatus === 'rejected-filter-btn') {
+
+            jobs.innerText = `${rejectedList.length} of ${total.innerText}`;
 
             if (rejectedList.length === 0) {
                 filterSection.innerHTML = '';
@@ -215,6 +219,10 @@ mainContainer.addEventListener('click', function (event) {
                 renderRejected();
             }
 
+        }
+
+        else {
+            jobs.innerText = `${allCardSection.children.length}`;
         }
     }
 
