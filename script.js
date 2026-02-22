@@ -195,7 +195,27 @@ mainContainer.addEventListener('click', function (event) {
 
         calculateCount();
 
-        
+        if (currentStatus === 'interview-filter-btn') {
+
+            if (interviewList.length === 0) {
+                filterSection.innerHTML = '';
+                noJobs.classList.remove('hidden');
+            } else {
+                renderInterview();
+            }
+
+        }
+
+        if (currentStatus === 'rejected-filter-btn') {
+
+            if (rejectedList.length === 0) {
+                filterSection.innerHTML = '';
+                noJobs.classList.remove('hidden');
+            } else {
+                renderRejected();
+            }
+
+        }
     }
 
 })
