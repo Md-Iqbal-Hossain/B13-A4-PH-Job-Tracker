@@ -267,7 +267,7 @@ function renderInterview() {
                 </div>
                 <!-- main part 2 -->
                 <div>
-                    <button class="btn-delete"><img src="Group 1.png" alt=""></button>
+                    <button class="btn-delete"><img src="Group 1.png" alt="" class="w-16 h-12 sm:w-1 sm:h-12 lg:w-10 lg:h-10"></button>
                 </div>`
 
         filterSection.appendChild(div);
@@ -312,7 +312,7 @@ function renderRejected() {
                 </div>
                 <!-- main part 2 -->
                 <div>
-                    <button class="btn-delete"><img src="Group 1.png" alt=""></button>
+                    <button class="btn-delete"><img src="Group 1.png" alt="" class="w-16 h-12 sm:w-1 sm:h-12 lg:w-10 lg:h-10"></button>
                 </div>`
 
         filterSection.appendChild(div);
